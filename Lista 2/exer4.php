@@ -8,23 +8,22 @@
   </head>
   <body>
   <div class = "container mt-5">
-    <h1>Exercício 2</h1>
-
-    <form method="post" action="exer2resposta.php">
+<h1>Exercício 4</h1>
+    <p>DIVISOR</p>
+    <form method="post" action="exer4resposta.php">
                         
                         <div class="mb-3">
-                            <label for="Valor1" class="form-label">Primeiro Valor </label>
-                            <input type="number" id="valor1" name="valor1" class="form-control" required="">
+                            <label for="valor1d" class="form-label">Insira o primeiro valor</label>
+                            <input type="number" id="valor1d" name="valor1d" class="form-control" required="">
                         </div>
                     
                         <div class="mb-3">
-                            <label for="Valor2" class="form-label">Segundo Valor</label>
-                            <input type="number" id="valor2" name="valor2" class="form-control" required="">
+                            <label for="valor2d" class="form-label">Insira o segundo valor</label>
+                            <input type="number" id="valor2d" name="valor2d" class="form-control" required="">
                         </div>
                     
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
-    <br>
 </div>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>

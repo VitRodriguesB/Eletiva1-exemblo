@@ -7,31 +7,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Resposta do Exercício 2</h1>
-    <?php
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        try{
-            $valor1 = $_POST['valor1'];
-            $valor2 = $_POST['valor2'];
-            $sub = $valor1 - $valor2;
-            echo "O valor da subtração é $sub";
-        }catch(Exception $e){
-            echo $e->getMessage();
-        }
-        
-        }
-        
-
-    ?>
     <br>
-    <h1>Resposta do Exercício 3</h1>
+    <h1>Resposta do Exercício 4</h1>
     <?php
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         try{
-            $valor1m = $_POST['valor1m'];
-            $valor2m = $_POST['valor2m'];
-            $subm = $valor1m - $valor2m;
-            echo "O valor da multiplicação é $sub";
+            $valor1d = $_POST['valor1d'];
+            $valor2d = $_POST['valor2d'];
+            if($valor2d != 0){
+            $subd = $valor1d / $valor2d;
+            echo "O valor da multiplicação é $subd";
+            }
+            else{
+                echo "Divição por 0 não permitida";
+            }
         }catch(Exception $e){
             echo $e->getMessage();
         }
